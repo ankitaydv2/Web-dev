@@ -1,0 +1,46 @@
+/* span{
+    color: blue;
+} */
+
+/* *{ //universal selector 
+    margin: 0px;
+    padding: 0px;
+} */
+
+h1{
+    background-color: aqua;
+    height: 300px ;
+    width: 400px;
+    border: 10px dotted red ;
+    padding: 20px;
+    box-sizing: content-box;
+    /* padding: 30px ;
+    margin: 60px; */
+    /* display: inline; */
+   
+}
+
+h2{
+    background-color: beige;
+    height: 300px ;
+    width: 400px;
+    border: 10px dotted orange ;
+    padding: 20px;
+    box-sizing: border-box;
+    /* display: inline; */
+}
+
+span{
+    background-color: aquamarine;
+    height: 300px;
+    width: 300px;
+    /* padding: 20px;
+    margin: 20px; */
+    margin-bottom: 310px;
+    /* padding-top: 50px; */
+    padding-right: 50px;
+    padding-left: 40px;
+    margin-right: 50px;
+    /* display: block; */
+
+}
