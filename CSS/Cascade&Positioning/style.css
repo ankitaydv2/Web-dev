@@ -1,0 +1,27 @@
+h1{
+    background-color: antiquewhite;
+}
+/* 
+#firstId{
+    background-color: aqua;
+}
+
+.classA{
+    background-color: blue;
+}
+
+li{
+    background-color: brown;
+} */
+
+h1{
+    background-color: aqua;
+}
+
+#firstId{
+    background-color: rgb(39, 207, 207);
+}
+
+h2{
+    background-color: bisque !important ;
+}

@@ -1,0 +1,23 @@
+#rect{
+    height: 200px;
+    width: 300px;
+    background-color: maroon;
+}
+
+#rect1{
+    height: 100px;
+    width: 300px;
+    background-color: darkblue;
+    position: fixed;
+    top: 55px;
+}
+
+#Circle{
+    height: 80px;
+    width: 80px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    left: 110px;
+    top: 65px;
+}
