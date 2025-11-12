@@ -1,0 +1,50 @@
+.container{
+    background-color: beige;
+    height: 400px;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     /* flex-wrap: wrap; elements chote hote hue neeche chle jaana */
+     gap: 10px;
+     
+}
+
+/* jUSTIFY CONTENT: main axis k around kaam krta h 
+    main axis decide kon krega ? - aapka flex dirxn */
+    /* align items work around cross axis */
+
+
+.box{
+    height: 100px;
+    width: 100px;
+}
+
+.first{
+    background-color: green;
+    margin: 5px;
+    /* flex-basis: 200px; Main axis k around 200 px width ya height ko 200 px kr dena */
+    /* flex-grow: 1 ; */ /* vaccant space ko utilise krna */
+    /* border-radius: 50%; */
+}
+
+.second{
+    background-color: red;
+     margin: 5px;
+     /* flex-grow: 2; */
+     flex-shrink: 4px;
+}
+
+.third{
+    background-color: blue;
+     margin: 5px;
+     align-self: flex-start;
+     /* flex-grow: 3; */
+}
+
+.fourth{
+    background-color: yellow;
+     margin: 5px;
+     
+     /* flex-grow: 4; */
+}
