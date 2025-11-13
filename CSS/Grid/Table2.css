@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: white;
+    font-size: 25px;
+}
+
+.Table{
+    display: grid;
+    height: 600px;
+    width: 600px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+.box{
+    background-color: blueviolet;
+}
+.first{
+    grid-row: 1/4;
+}
+.second{
+    grid-column:2/4 ;
+}
+.six{
+    grid-row: 2/6;
+    grid-column: 4/5;
+    /* rows & columns are fixed here*/
+}
