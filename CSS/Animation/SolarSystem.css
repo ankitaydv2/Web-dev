@@ -1,0 +1,149 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    background-color: black;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.sun{
+    height: 170px;
+    width: 170px;
+    background-color: yellow;
+    font-size: 15px;
+    color: black;
+
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+
+    animation:moving;
+    animation-duration:3s ;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    border-radius: 50%;
+
+}
+
+
+@keyframes moving {
+    from{
+         transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }  
+}
+
+.mercury{
+    height: 50px;
+    width: 50px;
+    background-color: rgb(224, 13, 13);
+    transform: translate(200px);
+    border-radius: 50%;
+    position: absolute;
+
+    /* animation: one 4s linear infinite; */
+}
+
+/* @keyframes one {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    } 
+}*/
+
+.venus{
+    height: 60px;
+    width: 60px;
+    background-color: rgb(216, 118, 61);
+    transform: translate(260px);
+    border-radius: 50%;
+    position: absolute;
+
+     
+}
+
+
+
+.earth{
+    height: 70px;
+    width: 70px;
+    background-color: rgb(73, 46, 221);
+    transform: translate(330px);
+    border-radius: 50%;
+    position: absolute;
+
+   
+}
+
+.mars{
+    height: 50px;
+    width: 50px;
+    background-color: rgb(109, 42, 34);
+    transform: translate(395px);
+    border-radius: 50%;
+    position: absolute;
+
+    
+}
+
+.jupiter{
+    height: 100px;
+    width: 100px;
+    background-color: brown;
+    transform: translate(480px);
+    border-radius: 50%;
+    position: absolute;
+
+}
+
+.saturn{
+    height: 85px;
+    width: 85px;
+    background-color: beige;
+    transform: translate(580px);
+    border-radius: 50%;
+    position: absolute;
+
+}
+
+.uranus{
+    height: 65px;
+    width: 65px;
+    background-color:bisque;
+    transform: translate(660px);
+    border-radius: 50%;
+    position: absolute;
+
+}
+
+
+.neptune{
+    height: 70px;
+    width: 70px;
+    background-color: rgb(150, 150, 224);
+    transform: translate(750px);
+    border-radius: 50%;
+    position: absolute;
+
+}
+
+.pluto{
+    height: 50px;
+    width: 50px;
+    background-color: rgb(72, 45, 224);
+    transform: translate(830px);
+    border-radius: 50%;
+    position: absolute;
+}
