@@ -17,7 +17,7 @@
 .sun{
     height: 170px;
     width: 170px;
-    background-color: yellow;
+    background-color: rgb(218, 200, 45);
     font-size: 15px;
     color: black;
 
@@ -25,125 +25,284 @@
     justify-content:center ;
     align-items: center;
 
-    animation:moving;
+    /* animation:moving; */
     animation-duration:3s ;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     border-radius: 50%;
-
 }
-
-
-@keyframes moving {
+/* @keyframes moving {
     from{
          transform: rotate(0deg);
     }
     to{
         transform: rotate(360deg);
     }  
-}
+} */
 
+.orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid rgb(255, 249, 249);
+    border-radius: 50%;
+    z-index: 0;
+}
+.mercury-orbit {
+    width: 300px;   /* distance from sun */
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid rgb(87, 81, 81);  /* orbit line */
+    border-radius: 50%;
+    animation: mercuryOrbit 4s linear infinite;
+}
 .mercury{
-    height: 50px;
-    width: 50px;
+    position: absolute;
+    height: 30px;
+    width: 30px;
     background-color: rgb(224, 13, 13);
-    transform: translate(200px);
+    /* transform:rotate(0deg) translate(100px); */
     border-radius: 50%;
-    position: absolute;
-
-    /* animation: one 4s linear infinite; */
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+@keyframes mercuryOrbit {
+    from { transform: translate(-50%, -50%) rotate(0deg); }
+    to   { transform: translate(-50%, -50%) rotate(360deg); }
 }
 
-/* @keyframes one {
-    from{
-        transform: rotate(0deg);
-    }
-    to{
-        transform: rotate(360deg);
-    } 
-}*/
 
+.venus-orbit {
+    width: 390px;   /* distance from sun */
+    height: 390px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid rgb(87, 81, 81);   /* orbit line */
+    border-radius: 50%;
+    animation: venusOrbit 7s linear infinite;
+}
 .venus{
-    height: 60px;
-    width: 60px;
+    height: 39px;
+    width: 39px;
     background-color: rgb(216, 118, 61);
-    transform: translate(260px);
+    /* transform:rotate(0deg) translate(260px); */
     border-radius: 50%;
-    position: absolute;
-
-     
+    position: absolute; 
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);   
+}
+@keyframes venusOrbit {
+    from { transform: translate(-50%, -50%) rotate(0deg); }
+    to   { transform: translate(-50%, -50%) rotate(360deg); }
 }
 
 
-
+.earth-orbit {
+    width: 500px;    /* orbit diameter */
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid rgb(87, 81, 81); /* orbit line */
+    border-radius: 50%;
+    animation: earthOrbit 10s linear infinite; /* only container rotates */
+}
 .earth{
-    height: 70px;
-    width: 70px;
+    height: 42px;
+    width: 42px;
     background-color: rgb(73, 46, 221);
-    transform: translate(330px);
     border-radius: 50%;
-    position: absolute;
-
-   
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    position: absolute;  
+    top: 50%;
+    left: 0;
+}
+@keyframes earthOrbit {
+    from { transform: translate(-50%, -50%) rotate(0deg); }
+    to   { transform: translate(-50%, -50%) rotate(360deg); }
 }
 
+.mars-orbit {
+    width: 660px;    /* orbit diameter */
+    height: 660px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid rgb(87, 81, 81); /* orbit line */
+    border-radius: 50%;
+    animation: marsOrbit 12s linear infinite; /* only container rotates */
+}
 .mars{
     height: 50px;
     width: 50px;
     background-color: rgb(109, 42, 34);
-    transform: translate(395px);
+    transform: translate(-50%, -50%);
     border-radius: 50%;
-    position: absolute;
-
-    
+    position: absolute;   
+    top: 50%;
+    left: 0;
+}
+@keyframes marsOrbit {
+    from { transform: translate(-50%, -50%) rotate(0deg); }
+    to   { transform: translate(-50%, -50%) rotate(360deg); }
 }
 
+.jupiter-orbit {
+    width: 780px;    /* orbit diameter */
+    height: 780px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid rgb(87, 81, 81); /* orbit line */
+    border-radius: 50%;
+    animation: jupiterOrbit 15s linear infinite; /* only container rotates */
+}
 .jupiter{
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
     background-color: brown;
-    transform: translate(480px);
+    transform: translate(-50%, -50%);
     border-radius: 50%;
     position: absolute;
-
+    top: 50%;
+    left: 0;
+}
+@keyframes jupiterOrbit {
+    from { transform: translate(-50%, -50%) rotate(0deg); }
+    to   { transform: translate(-50%, -50%) rotate(360deg); }
 }
 
+.saturn-orbit {
+    width: 990px;    /* orbit diameter */
+    height: 990px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid rgb(87, 81, 81); /* orbit line */
+    border-radius: 50%;
+    animation: saturnOrbit 18s linear infinite; /* only container rotates */
+}
 .saturn{
-    height: 85px;
-    width: 85px;
+    height: 60px;
+    width: 60px;
     background-color: beige;
-    transform: translate(580px);
+    transform:translate(-50%, -50%);
     border-radius: 50%;
     position: absolute;
-
+    top: 50%;
+    left: 0;
+}
+@keyframes saturnOrbit {
+    from { transform: translate(-50%, -50%) rotate(0deg); }
+    to   { transform: translate(-50%, -50%) rotate(360deg); }
 }
 
+.uranus-orbit {
+    width: 1150px;    /* orbit diameter */
+    height: 1150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid rgb(87, 81, 81); /* orbit line */
+    border-radius: 50%;
+    animation: uranusOrbit 22s linear infinite; /* only container rotates */
+}
 .uranus{
-    height: 65px;
-    width: 65px;
+    height: 45px;
+    width: 45px;
     background-color:bisque;
-    transform: translate(660px);
+    transform:translate(-50%, -50%);
     border-radius: 50%;
+    display: flex;
     position: absolute;
-
+    top: 50%;
+    left: 0;
+}
+@keyframes uranusOrbit {
+    from { transform: translate(-50%, -50%) rotate(0deg); }
+    to   { transform: translate(-50%, -50%) rotate(360deg); }
 }
 
-
+.neptune-orbit {
+    width: 1290px;    /* orbit diameter */
+    height: 1290px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid rgb(87, 81, 81); /* orbit line */
+    border-radius: 50%;
+    animation: neptuneOrbit 26s linear infinite; /* only container rotates */
+}
 .neptune{
-    height: 70px;
-    width: 70px;
+    height: 45px;
+    width: 45px;
     background-color: rgb(150, 150, 224);
-    transform: translate(750px);
+    transform:translate(-50%, -50%);
     border-radius: 50%;
     position: absolute;
-
+    top: 50%;
+    left: 0;
+}
+@keyframes neptuneOrbit {
+    from { transform: translate(-50%, -50%) rotate(0deg); }
+    to   { transform: translate(-50%, -50%) rotate(360deg); }
 }
 
+.pluto-orbit {
+    width: 1390px;    /* orbit diameter */
+    height: 1390px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid rgb(87, 81, 81); /* orbit line */
+    border-radius: 50%;
+    animation: plutoOrbit 30s linear infinite; /* only container rotates */
+}
 .pluto{
     height: 50px;
     width: 50px;
     background-color: rgb(72, 45, 224);
-    transform: translate(830px);
+    transform:translate(-50%, -50%);
     border-radius: 50%;
     position: absolute;
+    top: 50%;
+    left: 0;
+}
+@keyframes plutoOrbit {
+    from { transform: translate(-50%, -50%) rotate(0deg); }
+    to   { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+
+.container {
+    height: 100vh;
+    background-color: black;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* add stars */
+    background-image:
+        radial-gradient(white 1px, transparent 1px),
+        radial-gradient(white 1px, transparent 1px),
+        radial-gradient(white 1px, transparent 1px);
+    background-size: 100px 100px, 150px 150px, 80px 80px;
+    background-position: 10px 20px, 50px 60px, 80px 100px;
 }
